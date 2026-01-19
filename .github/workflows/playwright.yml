@@ -41,6 +41,13 @@ jobs:
             nivesh-playwright/playwright-report
             nivesh-partner/playwright-report
 
+      # 🔥 NEW STEP: ZIP REPORT
+      - name: Zip Playwright Reports
+        if: always()
+        run: |
+          zip -r playwright-report.zip nivesh-playwright/playwright-report nivesh-partner/playwright-report
+
+      # 📧 EMAIL WITH ATTACHMENT
       - name: Send Email Notification
         if: always()
         uses: dawidd6/action-send-mail@v3
@@ -55,12 +62,10 @@ jobs:
 
             Daily Playwright automation has been executed.
 
-            Repository: nivesh-automation
-            Workflow: Playwright Daily Automation
-
-            Please check GitHub Actions for logs and reports.
+            Please find the attached Playwright HTML report.
 
             Regards,
             Tanuj
           to: jangratanuj999@gmail.com
           from: Playwright Automation <jangratanuj999@gmail.com>
+          attachments: playwright-report.zip
