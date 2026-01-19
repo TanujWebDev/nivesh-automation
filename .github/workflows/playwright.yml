@@ -40,3 +40,27 @@ jobs:
           path: |
             nivesh-playwright/playwright-report
             nivesh-partner/playwright-report
+
+      - name: Send Email Notification
+        if: always()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.EMAIL_USER }}
+          password: ${{ secrets.EMAIL_PASS }}
+          subject: "Playwright Daily Automation Report"
+          body: |
+            Hi Sir,
+
+            Daily Playwright automation has been executed.
+
+            Repository: nivesh-automation
+            Workflow: Playwright Daily Automation
+
+            Please check GitHub Actions for logs and reports.
+
+            Regards,
+            Tanuj
+          to: jangratanuj999@gmail.com
+          from: Playwright Automation <jangratanuj999@gmail.com>
