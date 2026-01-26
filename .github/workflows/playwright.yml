@@ -41,7 +41,7 @@ jobs:
             nivesh-playwright/playwright-report
             nivesh-partner/playwright-report
 
-      # 🔥 NEW STEP: ZIP REPORT
+      # 🔥 ZIP REPORT
       - name: Zip Playwright Reports
         if: always()
         run: |
@@ -66,6 +66,8 @@ jobs:
 
             Regards,
             Tanuj
-          to: jangratanuj999@gmail.com
+          to: |
+            jangratanuj999@gmail.com,
+            girishgargdce@gmail.com
           from: Playwright Automation <jangratanuj999@gmail.com>
           attachments: playwright-report.zip
