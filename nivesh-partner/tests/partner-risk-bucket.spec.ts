@@ -8,7 +8,7 @@ test('test', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Enter password' }).click();
   await page.getByRole('textbox', { name: 'Enter password' }).fill('Password@123');
   await page.getByText('')
-  await page.locator('div').filter({ hasText: /^Submit$/ }).first()
+  await page.locator('div').filter({ hasText: /^Submit$/ }).first
   await page.locator('div').filter({ hasText: /^Profile$/ }).first()
   await page.locator('div').filter({ hasText: /^Risk Buckets$/ }).first()
   await page.getByText('Active').nth(4)
