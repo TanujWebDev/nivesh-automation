@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('Verify investor can open Mandates and Add Mandate screen', async ({ page }) => {
   await page.goto('https://staging.investor.niveshstar.com/login');
   await page.getByRole('textbox', { name: 'Enter mobile number' }).click({
     modifiers: ['ControlOrMeta']

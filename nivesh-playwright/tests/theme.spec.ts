@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('Verify investor can access and toggle Theme option', async ({ page }) => {
   // Recording...
   await page.goto('https://staging.investor.niveshstar.com/login');
   await page.getByRole('textbox', { name: 'Enter mobile number' }).click();

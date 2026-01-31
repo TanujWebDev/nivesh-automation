@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('Verify partner can login and access Profile section', async ({ page }) => {
   // Recording...
   await page.goto('https://staging.partner.niveshstar.com/login');
   await page.getByRole('textbox', { name: 'Enter mobile number' }).click();

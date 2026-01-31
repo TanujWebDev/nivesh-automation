@@ -1,6 +1,6 @@
 [
   {
-    "url": "https://c.go-mpulse.net/api/config.json?key=KAQPK-Q3JVQ-NMWP8-9RMRJ-TEZF5&d=simplehai.axisdirect.in&t=5896291&v=1.571.0&sl=0&si=qp0esyl82le-NaN&plugins=AK,ConfigOverride,Continuity,PageParams,IFrameDelay,AutoXHR,SPA,Angular,Backbone,Ember,History,RT,CrossDomain,BW,PaintTiming,NavigationTiming,ResourceTiming,Memory,CACHE_RELOAD,Errors,TPAnalytics,UserTiming,LOGN&acao=",
+    "url": "https://c.go-mpulse.net/api/config.json?key=KAQPK-Q3JVQ-NMWP8-9RMRJ-TEZF5&d=simplehai.axisdirect.in&t=5899467&v=1.571.0&sl=0&si=7u283bncvrf-NaN&plugins=AK,ConfigOverride,Continuity,PageParams,IFrameDelay,AutoXHR,SPA,Angular,Backbone,Ember,History,RT,CrossDomain,BW,PaintTiming,NavigationTiming,ResourceTiming,Memory,CACHE_RELOAD,Errors,TPAnalytics,UserTiming,LOGN&acao=",
     "status": 403,
     "data": {
       "message": "Domain simplehai.axisdirect.in is not registered with this API Key (an update to Boomerang version 1.629.0 or later may fix this)"
